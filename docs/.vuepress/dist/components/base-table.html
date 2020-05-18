@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>BaseTable | ADMIN Docs</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    
+    <meta name="description" content="">
+    <link rel="preload" href="/ADMINDocs/assets/css/0.styles.7b8991d8.css" as="style"><link rel="preload" href="/ADMINDocs/assets/js/app.5549deec.js" as="script"><link rel="preload" href="/ADMINDocs/assets/js/2.78fbbbce.js" as="script"><link rel="preload" href="/ADMINDocs/assets/js/11.ed286e7e.js" as="script"><link rel="prefetch" href="/ADMINDocs/assets/js/10.901411af.js"><link rel="prefetch" href="/ADMINDocs/assets/js/12.8fd86473.js"><link rel="prefetch" href="/ADMINDocs/assets/js/13.b44ba081.js"><link rel="prefetch" href="/ADMINDocs/assets/js/14.0057d69d.js"><link rel="prefetch" href="/ADMINDocs/assets/js/15.88233f4f.js"><link rel="prefetch" href="/ADMINDocs/assets/js/16.24ea9703.js"><link rel="prefetch" href="/ADMINDocs/assets/js/17.d125ecf1.js"><link rel="prefetch" href="/ADMINDocs/assets/js/18.f59de02a.js"><link rel="prefetch" href="/ADMINDocs/assets/js/19.2121ec55.js"><link rel="prefetch" href="/ADMINDocs/assets/js/20.7f193945.js"><link rel="prefetch" href="/ADMINDocs/assets/js/21.b314b121.js"><link rel="prefetch" href="/ADMINDocs/assets/js/22.b8208bbf.js"><link rel="prefetch" href="/ADMINDocs/assets/js/23.f5e9378a.js"><link rel="prefetch" href="/ADMINDocs/assets/js/24.73c5304f.js"><link rel="prefetch" href="/ADMINDocs/assets/js/3.898578fb.js"><link rel="prefetch" href="/ADMINDocs/assets/js/4.685e2bcc.js"><link rel="prefetch" href="/ADMINDocs/assets/js/5.c0f185c3.js"><link rel="prefetch" href="/ADMINDocs/assets/js/6.a075e38c.js"><link rel="prefetch" href="/ADMINDocs/assets/js/7.4f344baa.js"><link rel="prefetch" href="/ADMINDocs/assets/js/8.9becdd9a.js"><link rel="prefetch" href="/ADMINDocs/assets/js/9.2ce21492.js">
+    <link rel="stylesheet" href="/ADMINDocs/assets/css/0.styles.7b8991d8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/ADMINDocs/" class="home-link router-link-active"><!----> <span class="site-name">ADMIN Docs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>指南</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/ADMINDocs/guide/directory-structure.html" class="sidebar-link">目錄結構</a></li><li><a href="/ADMINDocs/guide/i18n.html" class="sidebar-link">i18n</a></li><li><a href="/ADMINDocs/guide/font.html" class="sidebar-link">字型</a></li><li><a href="/ADMINDocs/guide/eslint.html" class="sidebar-link">ESLint</a></li><li><a href="/ADMINDocs/guide/validate.html" class="sidebar-link">表單驗證</a></li><li><a href="/ADMINDocs/guide/vuex.html" class="sidebar-link">Vuex</a></li><li><a href="/ADMINDocs/guide/api.html" class="sidebar-link">API 呼叫</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>指令 (服務)</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/ADMINDocs/directive/loading.html" class="sidebar-link">$Loading</a></li><li><a href="/ADMINDocs/directive/message.html" class="sidebar-link">$Message</a></li><li><a href="/ADMINDocs/directive/resize.html" class="sidebar-link">v-resize</a></li><li><a href="/ADMINDocs/directive/scroll.html" class="sidebar-link">v-scroll</a></li><li><a href="/ADMINDocs/directive/mutate.html" class="sidebar-link">v-mutate</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>自訂組件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/ADMINDocs/components/base-pagination.html" class="sidebar-link">BasePagination</a></li><li><a href="/ADMINDocs/components/base-table.html" class="active sidebar-link">BaseTable</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/ADMINDocs/components/base-table.html#props-組件參數" class="sidebar-link">Props 組件參數</a></li><li class="sidebar-sub-header"><a href="/ADMINDocs/components/base-table.html#headers-表頭格式" class="sidebar-link">headers 表頭格式</a></li><li class="sidebar-sub-header"><a href="/ADMINDocs/components/base-table.html#slot-插槽" class="sidebar-link">Slot 插槽</a></li><li class="sidebar-sub-header"><a href="/ADMINDocs/components/base-table.html#使用方法" class="sidebar-link">使用方法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/ADMINDocs/components/base-table.html#基本用例" class="sidebar-link">基本用例</a></li><li class="sidebar-sub-header"><a href="/ADMINDocs/components/base-table.html#自訂欄位" class="sidebar-link">自訂欄位</a></li><li class="sidebar-sub-header"><a href="/ADMINDocs/components/base-table.html#加入-checkbox" class="sidebar-link">加入 checkbox</a></li><li class="sidebar-sub-header"><a href="/ADMINDocs/components/base-table.html#讀取效果" class="sidebar-link">讀取效果</a></li><li class="sidebar-sub-header"><a href="/ADMINDocs/components/base-table.html#完整範例" class="sidebar-link">完整範例</a></li></ul></li></ul></li><li><a href="/ADMINDocs/components/base-input.html" class="sidebar-link">BaseInput</a></li><li><a href="/ADMINDocs/components/base-select.html" class="sidebar-link">BaseSelect</a></li><li><a href="/ADMINDocs/components/base-textarea.html" class="sidebar-link">BaseTextarea</a></li><li><a href="/ADMINDocs/components/base-datepicker.html" class="sidebar-link">BaseDatepicker</a></li><li><a href="/ADMINDocs/components/base-dialog.html" class="sidebar-link">BaseDialog</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="basetable"><a href="#basetable" class="header-anchor">#</a> BaseTable</h1> <p>使用 Vuetify 的 <code>v-data-table</code> 封裝的組件，使用方法上大致與 ElementUI 相同。</p> <h2 id="props-組件參數"><a href="#props-組件參數" class="header-anchor">#</a> Props 組件參數</h2> <table><thead><tr><th>參數</th> <th style="text-align:center;">類型</th> <th style="text-align:center;">預設值</th> <th>說明</th></tr></thead> <tbody><tr><td>loading</td> <td style="text-align:center;">Boolean</td> <td style="text-align:center;">false</td> <td>表格讀取時的畫面呈現，會有一個讀取條及遮罩</td></tr> <tr><td>headers</td> <td style="text-align:center;">Array</td> <td style="text-align:center;">[]</td> <td>表頭，詳細設定格式請參照下面的 <code>headers</code></td></tr> <tr><td>items</td> <td style="text-align:center;">Array</td> <td style="text-align:center;">[]</td> <td>數據</td></tr> <tr><td>show-select</td> <td style="text-align:center;">Boolean</td> <td style="text-align:center;">false</td> <td>是否顯示 checkbox</td></tr> <tr><td>v-model</td> <td style="text-align:center;">Array</td> <td style="text-align:center;">none</td> <td>開啟 <code>show-select</code> 時同步綁定的值</td></tr> <tr><td>item-key</td> <td style="text-align:center;">String</td> <td style="text-align:center;">undefined</td> <td>開啟 <code>show-select</code> 的話請務必帶入此值，請帶入數據中的 key，而 value 必須為唯一值，建議可以帶入數據中的 id</td></tr> <tr><td>mobile-breakpoint</td> <td style="text-align:center;">String,Number</td> <td style="text-align:center;">600</td> <td>顯示 mobile 版本的斷點，如果希望表格始終為橫式請帶入 0</td></tr> <tr><td>formatter</td> <td style="text-align:center;">Function</td> <td style="text-align:center;"></td> <td>格式化對應欄位內容，使用方法跟之前專案一樣</td></tr></tbody></table> <h2 id="headers-表頭格式"><a href="#headers-表頭格式" class="header-anchor">#</a> headers 表頭格式</h2> <div class="language- extra-class"><pre class="language-text"><code>{
+  text: &lt;欄位顯示值&gt;,
+  value: &lt;欄位名稱&gt;,
+  align: &lt;對齊 left|center|right&gt;,
+  customized: &lt;自定義欄位 Boolean&gt;
+}
+</code></pre></div><h2 id="slot-插槽"><a href="#slot-插槽" class="header-anchor">#</a> Slot 插槽</h2> <table><thead><tr><th style="text-align:center;">插槽名稱</th> <th style="text-align:center;">參數</th> <th style="text-align:center;">說明</th></tr></thead> <tbody><tr><td style="text-align:center;"><code>top</code></td> <td style="text-align:center;">無</td> <td style="text-align:center;">位於表格上方的插槽，可以放一些 批量操作之類的按鈕</td></tr> <tr><td style="text-align:center;"><code>&lt;headers.value&gt;</code></td> <td style="text-align:center;"><code>{ item }</code></td> <td style="text-align:center;">自定義欄位，item 對象帶有該列的值<br>例如操作選項 : v-slot:action=&quot;{ item }&quot;<br>headers 的 customized 屬性必須為 true 才有用</td></tr> <tr><td style="text-align:center;"><code>footer</code></td> <td style="text-align:center;">無</td> <td style="text-align:center;">位於表格底部的插槽，可以把 <code>BasePagination</code> 放在這邊</td></tr></tbody></table> <h2 id="使用方法"><a href="#使用方法" class="header-anchor">#</a> 使用方法</h2> <h3 id="基本用例"><a href="#基本用例" class="header-anchor">#</a> 基本用例</h3> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>base-table</span> <span class="token attr-name">:headers</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>headers<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:items</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>dataSource<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>base-table</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">data</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+    headers<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        text<span class="token operator">:</span> <span class="token string">'ID'</span><span class="token punctuation">,</span>
+        align<span class="token operator">:</span> <span class="token string">'start'</span><span class="token punctuation">,</span>
+        value<span class="token operator">:</span> <span class="token string">'id'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'域名'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">'domain'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'域名廠商'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">'vendor'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'域名廠商帳號'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">'vendorAcc'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'DNS廠商'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">'dnsVendor'</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    dataSource<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        domain<span class="token operator">:</span> <span class="token string">'test'</span><span class="token punctuation">,</span>
+        vendor<span class="token operator">:</span> <span class="token string">'vendor'</span><span class="token punctuation">,</span>
+        vendorAcc<span class="token operator">:</span> <span class="token string">'vendorAcc'</span><span class="token punctuation">,</span>
+        dnsVendor<span class="token operator">:</span> <span class="token string">'dnsVendor'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+        domain<span class="token operator">:</span> <span class="token string">'test2'</span><span class="token punctuation">,</span>
+        vendor<span class="token operator">:</span> <span class="token string">'vendor2'</span><span class="token punctuation">,</span>
+        vendorAcc<span class="token operator">:</span> <span class="token string">'vendorAcc2'</span><span class="token punctuation">,</span>
+        dnsVendor<span class="token operator">:</span> <span class="token string">'dnsVendor2'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+        domain<span class="token operator">:</span> <span class="token string">'test3'</span><span class="token punctuation">,</span>
+        vendor<span class="token operator">:</span> <span class="token string">'vendor3'</span><span class="token punctuation">,</span>
+        vendorAcc<span class="token operator">:</span> <span class="token string">'vendorAcc3'</span><span class="token punctuation">,</span>
+        dnsVendor<span class="token operator">:</span> <span class="token string">'dnsVendor3'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="自訂欄位"><a href="#自訂欄位" class="header-anchor">#</a> 自訂欄位</h3> <p>例如我們要在每一行的尾端加上一些單筆操作的按鈕選項，在 <code>headers</code> 加入 <code>action</code> 屬性，並把 <code>customized</code> 設定為 <code>true</code>。</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">data</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+    headers<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        text<span class="token operator">:</span> <span class="token string">'ID'</span><span class="token punctuation">,</span>
+        align<span class="token operator">:</span> <span class="token string">'start'</span><span class="token punctuation">,</span>
+        value<span class="token operator">:</span> <span class="token string">'id'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'域名'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">'domain'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'域名廠商'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">'vendor'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'域名廠商帳號'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">'vendorAcc'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'DNS廠商'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">'dnsVendor'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        text<span class="token operator">:</span> <span class="token string">'操作'</span><span class="token punctuation">,</span>
+        value<span class="token operator">:</span> <span class="token string">'action'</span><span class="token punctuation">,</span>
+        align<span class="token operator">:</span> <span class="token string">'center'</span><span class="token punctuation">,</span>
+        customized<span class="token operator">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>接著模板中，使用插槽來自定義我們的按鈕，解構出來的 <code>item</code> 屬性則是該行的資料。</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>base-table</span> <span class="token attr-name">:headers</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>headers<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:items</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>dataSource<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#action</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>{ item }<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-btn</span> <span class="token attr-name">icon</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>edit(item)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        編輯
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-btn</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-btn</span> <span class="token attr-name">icon</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>remove(item)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        刪除
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-btn</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>base-table</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="加入-checkbox"><a href="#加入-checkbox" class="header-anchor">#</a> 加入 checkbox</h3> <p>開啟此功能必須傳入兩個參數 <code>show-select</code> 以及 <code>item-key</code>，<code>item-key</code> 請傳入資料中帶有唯一值的 Key，例如資料中幾乎都會有的 ID。</p> <p>然後使用 <code>v-model</code> 進行雙向同步，這邊我們在 data 中定義 <code>selected</code> 屬性為空陣列。</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>base-table</span> <span class="token attr-name">:headers</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>headers<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:items</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>dataSource<span class="token punctuation">&quot;</span></span> <span class="token attr-name">show-select</span> <span class="token attr-name">item-key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>id<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#action</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>{ item }<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-btn</span> <span class="token attr-name">icon</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>edit(item)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        編輯
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-btn</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-btn</span> <span class="token attr-name">icon</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>remove(item)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        刪除
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-btn</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>base-table</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">data</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+    headers<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        text<span class="token operator">:</span> <span class="token string">'ID'</span><span class="token punctuation">,</span>
+        align<span class="token operator">:</span> <span class="token string">'start'</span><span class="token punctuation">,</span>
+        value<span class="token operator">:</span> <span class="token string">'id'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'域名'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">'domain'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'域名廠商'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">'vendor'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'域名廠商帳號'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">'vendorAcc'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'DNS廠商'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">'dnsVendor'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        text<span class="token operator">:</span> <span class="token string">'操作'</span><span class="token punctuation">,</span>
+        value<span class="token operator">:</span> <span class="token string">'action'</span><span class="token punctuation">,</span>
+        align<span class="token operator">:</span> <span class="token string">'center'</span><span class="token punctuation">,</span>
+        customized<span class="token operator">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    selected<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="讀取效果"><a href="#讀取效果" class="header-anchor">#</a> 讀取效果</h3> <p>傳入 <code>loading</code> 參數，即可控制表單的讀取效果顯示。</p> <h3 id="完整範例"><a href="#完整範例" class="header-anchor">#</a> 完整範例</h3> <p>與 <code>BaseCard</code> 以及 <code>BasePagination</code> 搭配使用，若有對數據文字格式化的需求也可以傳入 <code>formatter</code> method。</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>base-card</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>域名列表<span class="token punctuation">&quot;</span></span> <span class="token attr-name">sub-title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Domain List<span class="token punctuation">&quot;</span></span> <span class="token attr-name">prepend-icon</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fa-list<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>base-table</span>
+      <span class="token attr-name">show-select</span>
+      <span class="token attr-name">:loading</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>dataLoading<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:headers</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>headers<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:items</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>dataSource<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">item-key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>id<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:formatter</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>formatter<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>selected<span class="token punctuation">&quot;</span></span>
+    <span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#top</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>d-flex<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-btn</span> <span class="token attr-name">small</span> <span class="token attr-name">color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>primary<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mr-1<span class="token punctuation">&quot;</span></span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>edit()<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            編輯
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-btn</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-btn</span> <span class="token attr-name">small</span> <span class="token attr-name">color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>primary<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mr-1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>分組<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-btn</span><span class="token punctuation">&gt;</span></span>
+
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-spacer</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-spacer</span><span class="token punctuation">&gt;</span></span>
+
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-btn</span> <span class="token attr-name">small</span> <span class="token attr-name">color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>indigo<span class="token punctuation">&quot;</span></span> <span class="token attr-name">dark</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mr-1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-icon</span> <span class="token attr-name">left</span><span class="token punctuation">&gt;</span></span>fa-file-import<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-icon</span><span class="token punctuation">&gt;</span></span>
+            匯入
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-btn</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-btn</span> <span class="token attr-name">small</span> <span class="token attr-name">color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>green<span class="token punctuation">&quot;</span></span> <span class="token attr-name">dark</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-icon</span> <span class="token attr-name">left</span><span class="token punctuation">&gt;</span></span>fa-file-export<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-icon</span><span class="token punctuation">&gt;</span></span>
+            匯出
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-btn</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#status</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>{ item }<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-chip</span>
+          <span class="token attr-name">small</span>
+          <span class="token attr-name">text-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>white<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">:color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>item.status === '啟用' ? 'green' : 'red'<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">v-text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>item.status<span class="token punctuation">&quot;</span></span>
+        <span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-chip</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#action</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>{ item }<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-btn</span> <span class="token attr-name">icon</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>edit(item)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-icon</span> <span class="token attr-name">small</span><span class="token punctuation">&gt;</span></span>far fa-edit<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-icon</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-btn</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-btn</span> <span class="token attr-name">icon</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>remove(item)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-icon</span> <span class="token attr-name">small</span><span class="token punctuation">&gt;</span></span>far fa-trash-alt<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-icon</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-btn</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#footer</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>base-pagination</span>
+          <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pagination.pageIndex<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">:page-count</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pagination.pageCount<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">:page-size.sync</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pagination.pageSize<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">@change</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pageChange<span class="token punctuation">&quot;</span></span>
+        <span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>base-pagination</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>base-table</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>base-card</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">data</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+    headers<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        text<span class="token operator">:</span> <span class="token string">'ID'</span><span class="token punctuation">,</span>
+        align<span class="token operator">:</span> <span class="token string">'start'</span><span class="token punctuation">,</span>
+        value<span class="token operator">:</span> <span class="token string">'id'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'域名'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">'domain'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'域名廠商'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">'vendor'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'域名廠商帳號'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">'vendorAcc'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'DNS廠商'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">'dnsVendor'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        text<span class="token operator">:</span> <span class="token string">'狀態'</span><span class="token punctuation">,</span>
+        value<span class="token operator">:</span> <span class="token string">'status'</span><span class="token punctuation">,</span>
+        align<span class="token operator">:</span> <span class="token string">'center'</span><span class="token punctuation">,</span>
+        customized<span class="token operator">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        text<span class="token operator">:</span> <span class="token string">'操作'</span><span class="token punctuation">,</span>
+        value<span class="token operator">:</span> <span class="token string">'action'</span><span class="token punctuation">,</span>
+        align<span class="token operator">:</span> <span class="token string">'center'</span><span class="token punctuation">,</span>
+        customized<span class="token operator">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    dataLoading<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    dataSource<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        domain<span class="token operator">:</span> <span class="token string">'test'</span><span class="token punctuation">,</span>
+        vendor<span class="token operator">:</span> <span class="token string">'vendor'</span><span class="token punctuation">,</span>
+        vendorAcc<span class="token operator">:</span> <span class="token string">'vendorAcc'</span><span class="token punctuation">,</span>
+        dnsVendor<span class="token operator">:</span> <span class="token string">'dnsVendor'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+        domain<span class="token operator">:</span> <span class="token string">'test2'</span><span class="token punctuation">,</span>
+        vendor<span class="token operator">:</span> <span class="token string">'vendor2'</span><span class="token punctuation">,</span>
+        vendorAcc<span class="token operator">:</span> <span class="token string">'vendorAcc2'</span><span class="token punctuation">,</span>
+        dnsVendor<span class="token operator">:</span> <span class="token string">'dnsVendor2'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+        domain<span class="token operator">:</span> <span class="token string">'test3'</span><span class="token punctuation">,</span>
+        vendor<span class="token operator">:</span> <span class="token string">'vendor3'</span><span class="token punctuation">,</span>
+        vendorAcc<span class="token operator">:</span> <span class="token string">'vendorAcc3'</span><span class="token punctuation">,</span>
+        dnsVendor<span class="token operator">:</span> <span class="token string">'dnsVendor3'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    selected<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">edit</span><span class="token punctuation">(</span><span class="token parameter">item</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token function">remove</span><span class="token punctuation">(</span><span class="token parameter">item</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// [ 欄位內容格式化 ]</span>
+    <span class="token function">formatter</span><span class="token punctuation">(</span><span class="token parameter">cell<span class="token punctuation">,</span> value</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">switch</span> <span class="token punctuation">(</span>cell<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">case</span> <span class="token string">'dnsVendor'</span><span class="token operator">:</span>
+          <span class="token keyword">switch</span> <span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">case</span> <span class="token string">'dnsVendor2'</span><span class="token operator">:</span>
+              <span class="token keyword">return</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>value<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> + formatTest</span><span class="token template-punctuation string">`</span></span>
+            <span class="token keyword">default</span><span class="token operator">:</span>
+              <span class="token keyword">return</span> value
+          <span class="token punctuation">}</span>
+        <span class="token keyword">default</span><span class="token operator">:</span>
+          <span class="token keyword">return</span> value
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最後更新:</span> <span class="time">2020-5-18 17:56:42</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/ADMINDocs/components/base-pagination.html" class="prev">
+        BasePagination
+      </a></span> <span class="next"><a href="/ADMINDocs/components/base-input.html">
+        BaseInput
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/ADMINDocs/assets/js/app.5549deec.js" defer></script><script src="/ADMINDocs/assets/js/2.78fbbbce.js" defer></script><script src="/ADMINDocs/assets/js/11.ed286e7e.js" defer></script>
+  </body>
+</html>
