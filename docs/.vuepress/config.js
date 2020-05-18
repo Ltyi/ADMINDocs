@@ -2,6 +2,7 @@ module.exports = {
   base: process.env.NODE_ENV === 'production' ? '/ADMINDocs/' : '/',
   title: 'ADMIN Docs',
   themeConfig: {
+    lastUpdated: '最後更新',
     sidebar: [
       {
         title: '指南',
@@ -34,6 +35,7 @@ module.exports = {
         collapsable: false,
         sidebarDepth: 2,
         children: [
+          '/components/base-pagination',
           '/components/base-table',
           '/components/base-input',
           '/components/base-select',
