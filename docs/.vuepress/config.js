@@ -35,6 +35,8 @@ module.exports = {
         collapsable: false,
         sidebarDepth: 2,
         children: [
+          '/components/base-card',
+          '/components/base-searchbar',
           '/components/base-pagination',
           '/components/base-table',
           '/components/base-input',
