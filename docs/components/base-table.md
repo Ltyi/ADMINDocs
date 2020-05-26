@@ -22,7 +22,8 @@
   text: <欄位顯示值>,
   value: <欄位名稱>,
   align: <對齊 left|center|right>,
-  customized: <自定義欄位 Boolean>
+  customized: <自定義欄位 Boolean>,
+  width: <欄位寬度，帶入數字即可>
 }
 ```
 
