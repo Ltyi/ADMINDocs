@@ -24,7 +24,7 @@
 
 通常會使用開一個獨立的 `.vue` 檔案放 `base-dialog`，然後用 `value/input` 去跟父層做 `v-model` 雙向同步開啟的狀態，這樣做的時候請務必記得 `props` 必須有 `value` 參數。
 
-而從內部關閉這個視窗的方法可以在按鈕上掛載 `method` 然後發送 `$emit('input', false)` 事件出去即可關閉，目前 `base-dialog` 只有在 `fullscreen` 模式下有預設關閉按鈕。
+而從內部關閉這個視窗的方法可以在按鈕上掛載 `method` 然後發送 `$emit('input', false)` 事件出去即可關閉，視窗右上角也有預設關閉按鈕。
 
 ```vue
 <template>

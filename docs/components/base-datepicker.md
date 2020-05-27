@@ -24,7 +24,7 @@
 - datetimerange/daterange - 陣列 Array
 - datetime/month/date - 字串 String
 
-2. 需從外部傳值的時候（例如單筆資料編輯時，必須帶入預設值時），傳入的值必須為相對應的格式，例如 API 回傳時是 `YYYY-MM-DDTHH:mm:ss` 的格式，而我們要顯示的是 `YYYY-MM-DD` 的話則需要另外使用 `moment` 去做格式化後再把值帶入組件。
+2. 需從外部傳值的時候（例如單筆資料編輯須帶入預設值時），傳入的值必須為相對應的格式，例如 API 回傳時是 `YYYY-MM-DDTHH:mm:ss` 的格式，而我們要顯示的是 `YYYY-MM-DD` 的話則需要另外使用 `moment` 去做格式化後再把值帶入組件。
 
 
 ### 單一日期選擇
