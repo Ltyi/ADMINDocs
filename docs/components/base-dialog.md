@@ -33,7 +33,7 @@
     persistent
     :fullscreen="$vuetify.breakpoint.xsOnly"
     :value="value"
-    @input="$emit('input', $event)"
+    @input="close"
   >
     <template #body>
       <v-btn @click="close">關閉</v-btn>
