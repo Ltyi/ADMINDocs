@@ -11,6 +11,8 @@
 | loading          |         boolean         |   false   | 控制項的讀取樣式                                                                                        |
 | name             |         String          | undefined | 會做為 `name` 傳遞給組件內的 `ValidationProvider`，會自動轉為 `i18n`，所以不需要在用 `$i18n.t()` 去帶值 |
 | rules            |         String          | undefined | 表單驗證的規則，請參閱表單驗證章節                                                                      |
+| vid              |         String          | undefined | 參閱[vee-validate 文檔](https://reurl.cc/oLpQOl)                                                        |
+| validMode        |         String          | undefined | 對應官方的 `mode` 參數，可傳入 'lazy' 做延遲驗證，其他參閱[vee-validate 文檔](https://reurl.cc/5lVMmV)  |
 | counter          |     Number, String      | undefined | 字數計數器，會在控制項右下角出現，可搭配 rules 的 `max` 做使用                                          |
 | label            |         String          | undefined | 控制項的名稱                                                                                            |
 | outlined         |         boolean         |   false   | 啟用 `outlined` 樣式                                                                                    |
