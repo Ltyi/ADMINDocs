@@ -19,7 +19,7 @@
 | readonly         |         Boolean         |   false   | 唯讀                                                                                                    |
 | clearable        |         Boolean         |   false   | 清除按鈕                                                                                                |
 | appendIcon       |         Boolean         | undefined | 後置 icon                                                                                               |
-| prependInnerIcon |         Boolean         | undefined | 前置 icon icon                                                                                          |
+| prependInnerIcon |         Boolean         | undefined | 前置 icon                                                                                               |
 | dense            |         Boolean         |   false   | 降低控制項高度，若 outlined 為 true，則自動開啟                                                         |
 | hideDetails      |         Boolean         |   false   | 是否隱藏錯誤訊息區塊 (可以降低控制項所佔高度)                                                           |
 | multiple         |         Boolean         |   false   | 複選模式，開啟後綁定的值必須為陣列                                                                      |
@@ -39,7 +39,7 @@
 
 ### 基本用例
 
-預設的 `items` 必須按照 `text/value` 的格式做為物件鍵值
+預設的 `items` 必須按照 `text/value` 的格式做為物件的 key/value
 
 ```vue
 <template>
@@ -76,9 +76,9 @@ export default {
 </script>
 ```
 
-### 更換鍵值
+### 更換 key/value
 
-如果要依照自訂的鍵值，則需另外傳入 `item-text` 以及 `item-value` 當作參數。
+如果要更改預設的 key/value，則需另外傳入 `item-text` 以及 `item-value` 當作參數。
 
 假設選項格式是這樣
 
