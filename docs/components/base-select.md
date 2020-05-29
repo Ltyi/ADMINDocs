@@ -6,27 +6,28 @@
 
 沒有把原廠全部的參數寫進這個組件，若要參考全部 props 請參考官方文檔，根據需求跟改 `BaseSelect`。
 
-| 參數          |          類型           |  預設值   | 說明                                                                                                    |
-| ------------- | :---------------------: | :-------: | ------------------------------------------------------------------------------------------------------- |
-| loading       |         boolean         |   false   | 控制項的讀取樣式                                                                                        |
-| name          |         String          | undefined | 會做為 `name` 傳遞給組件內的 `ValidationProvider`，會自動轉為 `i18n`，所以不需要在用 `$i18n.t()` 去帶值 |
-| rules         |         String          | undefined | 表單驗證的規則，請參閱表單驗證章節                                                                      |
-| counter       |     Number, String      | undefined | 字數計數器，會在控制項右下角出現，可搭配 rules 的 `max` 做使用                                          |
-| label         |         String          | undefined | 控制項的名稱                                                                                            |
-| outlined      |         boolean         |   false   | 啟用 `outlined` 樣式                                                                                    |
-| placeholder   |         String          | undefined | 就是 placeholder                                                                                        |
-| disabled      |         Boolean         |   false   | 禁用控制項                                                                                              |
-| readonly      |         Boolean         |   false   | 唯讀                                                                                                    |
-| clearable     |         Boolean         |   false   | 清除按鈕                                                                                                |
-| appendIcon    |         Boolean         | undefined | 後置 icon                                                                                               |
-| dense         |         Boolean         |   false   | 降低控制項高度，若 outlined 為 true，則自動開啟                                                         |
-| hideDetails   |         Boolean         |   false   | 是否隱藏錯誤訊息區塊 (可以降低控制項所佔高度)                                                           |
-| multiple      |         Boolean         |   false   | 複選模式，開啟後綁定的值必須為陣列                                                                      |
-| items         |          Array          |    []     | select 的 options，格式請參照下方 options                                                               |
-| item-text     | String, Array, Function |   text    | 更改預設的 options text key 值                                                                          |
-| item-value    | String, Array, Function |   value   | 更改預設的 options value key 值                                                                         |
-| item-disabled | String, Array, Function | disabled  | 更改預設的 options disabled key 值                                                                      |
-| returnObject  |         Boolean         |   false   | 回傳整個物件                                                                                            |
+| 參數             |          類型           |  預設值   | 說明                                                                                                    |
+| ---------------- | :---------------------: | :-------: | ------------------------------------------------------------------------------------------------------- |
+| loading          |         boolean         |   false   | 控制項的讀取樣式                                                                                        |
+| name             |         String          | undefined | 會做為 `name` 傳遞給組件內的 `ValidationProvider`，會自動轉為 `i18n`，所以不需要在用 `$i18n.t()` 去帶值 |
+| rules            |         String          | undefined | 表單驗證的規則，請參閱表單驗證章節                                                                      |
+| counter          |     Number, String      | undefined | 字數計數器，會在控制項右下角出現，可搭配 rules 的 `max` 做使用                                          |
+| label            |         String          | undefined | 控制項的名稱                                                                                            |
+| outlined         |         boolean         |   false   | 啟用 `outlined` 樣式                                                                                    |
+| placeholder      |         String          | undefined | 就是 placeholder                                                                                        |
+| disabled         |         Boolean         |   false   | 禁用控制項                                                                                              |
+| readonly         |         Boolean         |   false   | 唯讀                                                                                                    |
+| clearable        |         Boolean         |   false   | 清除按鈕                                                                                                |
+| appendIcon       |         Boolean         | undefined | 後置 icon                                                                                               |
+| prependInnerIcon |         Boolean         | undefined | 前置 icon icon                                                                                          |
+| dense            |         Boolean         |   false   | 降低控制項高度，若 outlined 為 true，則自動開啟                                                         |
+| hideDetails      |         Boolean         |   false   | 是否隱藏錯誤訊息區塊 (可以降低控制項所佔高度)                                                           |
+| multiple         |         Boolean         |   false   | 複選模式，開啟後綁定的值必須為陣列                                                                      |
+| items            |          Array          |    []     | select 的 options，格式請參照下方 options                                                               |
+| item-text        | String, Array, Function |   text    | 更改預設的 options text key 值                                                                          |
+| item-value       | String, Array, Function |   value   | 更改預設的 options value key 值                                                                         |
+| item-disabled    | String, Array, Function | disabled  | 更改預設的 options disabled key 值                                                                      |
+| returnObject     |         Boolean         |   false   | 回傳整個物件                                                                                            |
 
 ## Events 事件
 
@@ -74,7 +75,6 @@ export default {
 }
 </script>
 ```
-
 
 ### 更換鍵值
 
