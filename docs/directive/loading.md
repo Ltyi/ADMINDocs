@@ -1,17 +1,16 @@
-# $Loading
+# $loading
 
 過去使用 ElementUI 時，經常會使用到全局的加載服務來呈現全螢幕讀取的效果，但是 Vuetify 並沒有提供這個功能，所以自行製作了一個類似的功能。
 
 ## 使用方法
 
-方法掛載在 `Vue.prototype` 。
+方法會掛載在 `Vue.prototype`，`main.js` 引入後使用 `Vue.use()` 即可。
 
 ```js
 // main.js
 
-// [ 全域 Loading 方法載入&掛載  ]
-import Loading from '@/components/loading/index'
-Vue.prototype.$loading = Loading.service
+import loading from '@/components/loading/'
+Vue.use(loading)
 ```
 
 使用 `this.$loading(true)` 呼叫
