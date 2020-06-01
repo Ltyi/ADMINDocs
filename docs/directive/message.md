@@ -11,8 +11,8 @@ Vuetify 的訊息組件可以參考 `v-snackbar`，不過目前這個組件並�
 ```js
 // main.js
 
-import message from '@/components/snackbar/'
-Vue.use(message)
+import snackbar from '@/components/snackbar/'
+Vue.use(snackbar)
 ```
 
 使用 `this.$message(options)` 呼叫
@@ -43,3 +43,13 @@ export default {
 ## 備註
 
 目前僅做純文字的顯示，未來如果有需要增加 `icon` 或是遷入 `HTML` 的需求則需要另外在做調整。
+
+## 外部 JS 檔案使用
+
+如果在其他非 Vue 實例中的 js 檔案想使用這個指令的話，可以參照以下方法
+
+```js
+import snackbar from '@/components/snackbar/'
+
+// 在需要的地方呼叫 snackbar.message(options) 帶入選項即可
+```

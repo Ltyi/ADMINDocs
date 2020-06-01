@@ -28,3 +28,13 @@ export default {
 ::: tip 提示
 讀取組件請參照專案 components 目錄下的 `loading` 資料夾
 :::
+
+## 外部 JS 檔案使用
+
+如果在其他非 Vue 實例中的 js 檔案想使用這個指令的話，可以參照以下方法
+
+```js
+import loading from '@/components/loading/'
+
+// 在需要的地方呼叫 loading.overlay(true) 即可
+```
