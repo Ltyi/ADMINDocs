@@ -23,17 +23,19 @@
   value: <欄位名稱>,
   align: <對齊 left|center|right>,
   customized: <自定義欄位 Boolean>,
+  customizedHeader: <自定義表頭 Boolean>,
   width: <欄位寬度，帶入數字即可>
 }
 ```
 
 ## Slot 插槽
 
-|     插槽名稱      |    參數    |                                                               說明                                                               |
-| :---------------: | :--------: | :------------------------------------------------------------------------------------------------------------------------------: |
-|       `top`       |     無     |                                        位於表格上方的插槽，可以放一些 批量操作之類的按鈕                                         |
-| `<headers.value>` | `{ item }` | 自定義欄位，item 對象帶有該列的值<br />例如操作選項 : v-slot:action="{ item }"<br />headers 的 customized 屬性必須為 true 才有用 |
-|     `footer`      |     無     |                                       位於表格底部的插槽，可以把 `BasePagination` 放在這邊                                       |
+|         插槽名稱         |     參數     |                                                                         說明                                                                          |
+| :----------------------: | :----------: | :---------------------------------------------------------------------------------------------------------------------------------------------------: |
+|          `top`           |      無      |                                                   位於表格上方的插槽，可以放一些 批量操作之類的按鈕                                                   |
+|    `<headers.value>`     |  `{ item }`  |           自定義欄位，item 對象帶有該列的值<br />例如操作選項 : v-slot:action="{ item }"<br />headers 的 customized 屬性必須為 true 才有用            |
+| `header_<headers.value>` | `{ header }` | 自定義表頭，header 對象帶有所有表頭的值<br />例如操作選項 : v-slot:header_action="{ header }"<br />headers 的 customizedHeader 屬性必須為 true 才有用 |
+|         `footer`         |      無      |                                                 位於表格底部的插槽，可以把 `BasePagination` 放在這邊                                                  |
 
 ## 使用方法
 
@@ -127,6 +129,49 @@ export default {
       </v-btn>
       <v-btn icon @click="remove(item)">
         刪除
+      </v-btn>
+    </template>
+  </base-table>
+</template>
+```
+
+### 自訂表頭
+
+如果表頭有自訂義需求的話，可以開一個 `header_${header.value}` 的 slot 即可，解構出來的 `header` 則帶有 header 資料，另外記得在 headers 內把需要自訂表頭的物件加上 `customizedHeader: true`。
+
+```vue
+<script>
+export default {
+  data: () => ({
+    headers: [
+      {
+        text: 'ID',
+        align: 'start',
+        value: 'id'
+      },
+      { text: '域名', value: 'domain' },
+      { text: '域名廠商', value: 'vendor' },
+      { text: '域名廠商帳號', value: 'vendorAcc' },
+      { text: 'DNS廠商', value: 'dnsVendor' },
+      {
+        text: '操作',
+        value: 'action',
+        align: 'center',
+        customized: true,
+        customizedHeader: true
+      }
+    ]
+  })
+}
+</script>
+```
+
+```vue
+<template>
+  <base-table :headers="headers" :items="dataSource">
+    <template #header_action="{ item }">
+      <v-btn icon text>
+        <v-icon>fa-plus</v-icon>
       </v-btn>
     </template>
   </base-table>
