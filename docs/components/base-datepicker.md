@@ -18,6 +18,7 @@
 | dense       | Boolean |   false   | 降低控制項高度，若 outlined 為 true，則自動開啟                                                         |
 | top         | Boolean |   false   | 視窗彈出後的起始位置調整                                                                                |
 | bottom      | Boolean |   false   | 視窗彈出後的起始位置調整                                                                                |
+| disabled    | Boolean |   false   | 禁用控制項                                                                                              |
 
 ## 使用方法
 
