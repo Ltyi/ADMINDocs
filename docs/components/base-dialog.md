@@ -4,14 +4,15 @@
 
 ## Props 組件參數
 
-| 參數        |     類型      |  預設值   | 說明                                                                          |
-| ----------- | :-----------: | :-------: | ----------------------------------------------------------------------------- |
-| loading     |    Boolean    |   false   | 視窗讀取效果                                                                  |
-| fullscreen  |    Boolean    |   false   | 可以搭配斷點在行動裝置顯示全螢幕版的 dialog，主要因應行動版寬度可能不夠的情況 |
-| hideOverlay |    Boolean    |   false   | 是否顯示遮罩                                                                  |
-| persistent  |    Boolean    |   false   | 禁止使用者點擊外部區域關閉彈窗                                                |
-| title       |    String     | undefined | 彈窗標題                                                                      |
-| maxWidth    | String,Number |    600    | 彈窗最大寬度，預設 600                                                        |
+| 參數           |     類型      |  預設值   | 說明                                                                          |
+| -------------- | :-----------: | :-------: | ----------------------------------------------------------------------------- |
+| loading        |    Boolean    |   false   | 視窗讀取效果                                                                  |
+| fullscreen     |    Boolean    |   false   | 可以搭配斷點在行動裝置顯示全螢幕版的 dialog，主要因應行動版寬度可能不夠的情況 |
+| hideOverlay    |    Boolean    |   false   | 是否顯示遮罩                                                                  |
+| persistent     |    Boolean    |   false   | 禁止使用者點擊外部區域關閉彈窗                                                |
+| title          |    String     | undefined | 彈窗標題                                                                      |
+| maxWidth       | String,Number |    600    | 彈窗最大寬度，預設 600                                                        |
+| disabled-close |    Boolean    |   false   | 隱藏右上角關閉按鈕                                                            |
 
 ## Slot 插槽
 

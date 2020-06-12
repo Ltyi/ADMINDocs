@@ -25,6 +25,7 @@ module.exports = {
         children: [
           '/directive/loading',
           '/directive/message',
+          '/directive/permission',
           '/directive/resize',
           '/directive/scroll',
           '/directive/mutate'
@@ -43,7 +44,8 @@ module.exports = {
           '/components/base-select',
           '/components/base-textarea',
           '/components/base-datepicker',
-          '/components/base-dialog'
+          '/components/base-dialog',
+          '/components/base-combobox'
         ]
       }
     ]
