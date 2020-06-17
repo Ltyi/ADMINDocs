@@ -13,6 +13,8 @@
 | title          |    String     | undefined | 彈窗標題                                                                      |
 | maxWidth       | String,Number |    600    | 彈窗最大寬度，預設 600                                                        |
 | disabled-close |    Boolean    |   false   | 隱藏右上角關閉按鈕                                                            |
+| color          |    String     | undefined | 彈窗顏色                                                                      |
+| dark           |    Boolean    |   false   | 是否為深色模式                                                                |
 
 ## Slot 插槽
 
