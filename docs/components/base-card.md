@@ -8,7 +8,8 @@
 | ------------ | :-----: | :-------: | --------------------------------------------------------------------------------------- |
 | title        | String  | undefined | 卡片標題                                                                                |
 | sub-title    | String  | undefined | 卡片副標題                                                                              |
-| text-color   | String  | undefined | 變更卡片標題及 `prepend-icon` 的顏色，請帶入 Vuetify 的文字色彩 class，例如 `red--text` |
+| text-color   | String  | undefined | 變更卡片標題及 `prepend-icon` 的顏色，請帶入 Vuetify 的文字色彩 class，例如 `red--text`，或是自訂 Class |
+| background-color   | String  | undefined | 變更卡片標題底色，請帶入 Vuetify 的背景色彩 class，例如 `teal darken-2`，或是自訂 Class |
 | collapse     | Boolean |   false   | 是否啟用卡片的 collapse                                                                 |
 | prepend-icon | String  | undefined | 標題前置 icon，請帶入 `fa` 或 `mdi` 前綴的 icon                                         |
 | body-class   | String  | undefined | `card-text` 階層的 class，如果你想改內距可以用 `pa-2` 之類的                            |
