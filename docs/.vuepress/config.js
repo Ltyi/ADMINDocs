@@ -45,7 +45,8 @@ module.exports = {
           '/components/base-textarea',
           '/components/base-datepicker',
           '/components/base-dialog',
-          '/components/base-combobox'
+          '/components/base-combobox',
+          '/components/base-currency'
         ]
       }
     ]

@@ -23,15 +23,17 @@
 | appendIcon  |    Boolean     | undefined | 後置 icon                                                                                               |
 | dense       |    Boolean     |   false   | 降低控制項高度，若 outlined 為 true，則自動開啟                                                         |
 | hideDetails |    Boolean     |   false   | 是否隱藏錯誤訊息區塊 (可以降低控制項所佔高度)                                                           |
+| prefix      |     String     | undefined | 輸入框前綴文字                                                                                          |
+| suffix      |     String     | undefined | 輸入框後綴文字                                                                                          |
 
 ## Events 事件
 
-| 事件名稱 | 參數 | 說明       |
-| -------- | :--: | ---------- |
+| 事件名稱        | 參數 | 說明                   |
+| --------------- | :--: | ---------------------- |
 | `@click:append` |  無  | append icon click 事件 |
-| `@focus` |  無  | focus 事件 |
-| `@blur`  |  無  | blur 事件  |
-| `@input` |  無  | input 事件 |
+| `@focus`        |  無  | focus 事件             |
+| `@blur`         |  無  | blur 事件              |
+| `@input`        |  無  | input 事件             |
 
 ## 使用方法
 
