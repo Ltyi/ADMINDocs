@@ -16,15 +16,6 @@
 | max            | Number |  null  | 可接受的最大值，若輸入超過會自動綁定為最大值                     |
 | decimal-length | Number |   2    | 小數點位數，預設為 2，必須介於 0~20                              |
 
-## Events 事件
-
-| 事件名稱        | 參數 | 說明                   |
-| --------------- | :--: | ---------------------- |
-| `@click:append` |  無  | append icon click 事件 |
-| `@focus`        |  無  | focus 事件             |
-| `@blur`         |  無  | blur 事件              |
-| `@input`        |  無  | input 事件             |
-
 ## 使用方法
 
 ### 基本用例
