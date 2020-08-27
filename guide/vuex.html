@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vuex | ADMIN Docs</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    
+    <meta name="description" content="">
+    <link rel="preload" href="/ADMINDocs/assets/css/0.styles.7b8991d8.css" as="style"><link rel="preload" href="/ADMINDocs/assets/js/app.25a4ab83.js" as="script"><link rel="preload" href="/ADMINDocs/assets/js/2.78fbbbce.js" as="script"><link rel="preload" href="/ADMINDocs/assets/js/29.cd0825c4.js" as="script"><link rel="prefetch" href="/ADMINDocs/assets/js/10.8ad75e49.js"><link rel="prefetch" href="/ADMINDocs/assets/js/11.937ae598.js"><link rel="prefetch" href="/ADMINDocs/assets/js/12.72ded7e0.js"><link rel="prefetch" href="/ADMINDocs/assets/js/13.b75639f7.js"><link rel="prefetch" href="/ADMINDocs/assets/js/14.b5f533bc.js"><link rel="prefetch" href="/ADMINDocs/assets/js/15.3c01cf04.js"><link rel="prefetch" href="/ADMINDocs/assets/js/16.c9783833.js"><link rel="prefetch" href="/ADMINDocs/assets/js/17.47a7d9cc.js"><link rel="prefetch" href="/ADMINDocs/assets/js/18.cd6abe88.js"><link rel="prefetch" href="/ADMINDocs/assets/js/19.460373e0.js"><link rel="prefetch" href="/ADMINDocs/assets/js/20.ca43e444.js"><link rel="prefetch" href="/ADMINDocs/assets/js/21.5fd595da.js"><link rel="prefetch" href="/ADMINDocs/assets/js/22.2243a14f.js"><link rel="prefetch" href="/ADMINDocs/assets/js/23.a5916a2c.js"><link rel="prefetch" href="/ADMINDocs/assets/js/24.6713c1c9.js"><link rel="prefetch" href="/ADMINDocs/assets/js/25.e4f9e4ce.js"><link rel="prefetch" href="/ADMINDocs/assets/js/26.2fa5ca4d.js"><link rel="prefetch" href="/ADMINDocs/assets/js/27.64cc5e89.js"><link rel="prefetch" href="/ADMINDocs/assets/js/28.f7836301.js"><link rel="prefetch" href="/ADMINDocs/assets/js/3.1eb69417.js"><link rel="prefetch" href="/ADMINDocs/assets/js/4.685e2bcc.js"><link rel="prefetch" href="/ADMINDocs/assets/js/5.4c3ee75d.js"><link rel="prefetch" href="/ADMINDocs/assets/js/6.7eb22b98.js"><link rel="prefetch" href="/ADMINDocs/assets/js/7.80be8753.js"><link rel="prefetch" href="/ADMINDocs/assets/js/8.56e50919.js"><link rel="prefetch" href="/ADMINDocs/assets/js/9.cbbec762.js">
+    <link rel="stylesheet" href="/ADMINDocs/assets/css/0.styles.7b8991d8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/ADMINDocs/" class="home-link router-link-active"><!----> <span class="site-name">ADMIN Docs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>指南</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/ADMINDocs/guide/directory-structure.html" class="sidebar-link">目錄結構</a></li><li><a href="/ADMINDocs/guide/i18n.html" class="sidebar-link">i18n</a></li><li><a href="/ADMINDocs/guide/font.html" class="sidebar-link">字型</a></li><li><a href="/ADMINDocs/guide/eslint.html" class="sidebar-link">ESLint</a></li><li><a href="/ADMINDocs/guide/validate.html" class="sidebar-link">表單驗證</a></li><li><a href="/ADMINDocs/guide/vuex.html" class="active sidebar-link">Vuex</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/ADMINDocs/guide/vuex.html#user" class="sidebar-link">User</a></li><li class="sidebar-sub-header"><a href="/ADMINDocs/guide/vuex.html#settings" class="sidebar-link">Settings</a></li><li class="sidebar-sub-header"><a href="/ADMINDocs/guide/vuex.html#state-取值" class="sidebar-link">State 取值</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/ADMINDocs/guide/vuex.html#直接取值" class="sidebar-link">直接取值</a></li><li class="sidebar-sub-header"><a href="/ADMINDocs/guide/vuex.html#使用-mapstate" class="sidebar-link">使用 mapState</a></li></ul></li><li class="sidebar-sub-header"><a href="/ADMINDocs/guide/vuex.html#mutations-取得" class="sidebar-link">mutations 取得</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/ADMINDocs/guide/vuex.html#直接呼叫" class="sidebar-link">直接呼叫</a></li><li class="sidebar-sub-header"><a href="/ADMINDocs/guide/vuex.html#使用-mapmutations" class="sidebar-link">使用 mapMutations</a></li></ul></li><li class="sidebar-sub-header"><a href="/ADMINDocs/guide/vuex.html#actions-取得" class="sidebar-link">actions 取得</a></li><li class="sidebar-sub-header"><a href="/ADMINDocs/guide/vuex.html#getters-取得" class="sidebar-link">getters 取得</a></li></ul></li><li><a href="/ADMINDocs/guide/api.html" class="sidebar-link">API 呼叫</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>指令 (服務)</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/ADMINDocs/directive/loading.html" class="sidebar-link">$loading</a></li><li><a href="/ADMINDocs/directive/message.html" class="sidebar-link">$message</a></li><li><a href="/ADMINDocs/directive/permission.html" class="sidebar-link">permission</a></li><li><a href="/ADMINDocs/directive/resize.html" class="sidebar-link">v-resize</a></li><li><a href="/ADMINDocs/directive/scroll.html" class="sidebar-link">v-scroll</a></li><li><a href="/ADMINDocs/directive/mutate.html" class="sidebar-link">v-mutate</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>自訂組件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/ADMINDocs/components/base-card.html" class="sidebar-link">BaseCard</a></li><li><a href="/ADMINDocs/components/base-searchbar.html" class="sidebar-link">BaseSeachbar</a></li><li><a href="/ADMINDocs/components/base-pagination.html" class="sidebar-link">BasePagination</a></li><li><a href="/ADMINDocs/components/base-table.html" class="sidebar-link">BaseTable</a></li><li><a href="/ADMINDocs/components/base-input.html" class="sidebar-link">BaseInput</a></li><li><a href="/ADMINDocs/components/base-select.html" class="sidebar-link">BaseSelect</a></li><li><a href="/ADMINDocs/components/base-textarea.html" class="sidebar-link">BaseTextarea</a></li><li><a href="/ADMINDocs/components/base-datepicker.html" class="sidebar-link">BaseDatePicker</a></li><li><a href="/ADMINDocs/components/base-dialog.html" class="sidebar-link">BaseDialog</a></li><li><a href="/ADMINDocs/components/base-combobox.html" class="sidebar-link">BaseCombobox</a></li><li><a href="/ADMINDocs/components/base-currency.html" class="sidebar-link">BaseCurrency</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vuex"><a href="#vuex" class="header-anchor">#</a> Vuex</h1> <p>專案中的 Vuex 已經做預先的模組化設定，將過去專案中習慣使用的值大致區分為兩類 <code>user</code> 及 <code>settings</code>。</p> <p>以下貼的程式碼只是做為後面的範例使用，實際程式碼可能不同，請直接參照專案目錄中的 <code>store</code> 資料夾。</p> <h2 id="user"><a href="#user" class="header-anchor">#</a> User</h2> <p>這邊我預先把之前專案中用到的 <code>accessToken</code> <code>signalr</code> <code>identity</code> 放在 User.js，若還有其他的參數要歸類到 User 的話再自行加入即可。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/* 用戶相關 */</span>
+
+<span class="token keyword">const</span> state <span class="token operator">=</span> <span class="token punctuation">{</span>
+  accessToken<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+  signalr<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+  identity<span class="token operator">:</span> <span class="token keyword">null</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// [ Mutations Types ]</span>
+<span class="token keyword">const</span> types <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token constant">SET_ACCESS_TOKEN</span><span class="token operator">:</span> <span class="token string">'SET_ACCESS_TOKEN'</span><span class="token punctuation">,</span>
+  <span class="token constant">SET_SIGNALR</span><span class="token operator">:</span> <span class="token string">'SET_SIGNALR'</span><span class="token punctuation">,</span>
+  <span class="token constant">SET_IDENTITY</span><span class="token operator">:</span> <span class="token string">'SET_IDENTITY'</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> mutations <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">[</span>types<span class="token punctuation">.</span><span class="token constant">SET_ACCESS_TOKEN</span><span class="token punctuation">]</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> payload<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    state<span class="token punctuation">.</span>loading <span class="token operator">=</span> payload
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token punctuation">[</span>types<span class="token punctuation">.</span><span class="token constant">SET_SIGNALR</span><span class="token punctuation">]</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> payload<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    state<span class="token punctuation">.</span>drawer <span class="token operator">=</span> payload
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token punctuation">[</span>types<span class="token punctuation">.</span><span class="token constant">SET_IDENTITY</span><span class="token punctuation">]</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> payload<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    state<span class="token punctuation">.</span>drawer <span class="token operator">=</span> payload
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  namespaced<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  state<span class="token punctuation">,</span>
+  mutations
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="settings"><a href="#settings" class="header-anchor">#</a> Settings</h2> <p>這邊則是一些跟網站設定有關係的值，包含語系、深色模式、主題色等等。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/* 網站設定相關 */</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> localeChanged <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vee-validate'</span>
+
+<span class="token keyword">const</span> state <span class="token operator">=</span> <span class="token punctuation">{</span>
+  loading<span class="token operator">:</span> <span class="token punctuation">{</span>
+    visible<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    lock<span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  drawer<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  locale<span class="token operator">:</span> <span class="token string">'zh-TW'</span><span class="token punctuation">,</span>
+  dark<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  primaryColor<span class="token operator">:</span> <span class="token string">'#1ABC9C'</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// [ Mutations Types ]</span>
+<span class="token keyword">const</span> types <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token constant">SET_LOADING</span><span class="token operator">:</span> <span class="token string">'SET_LOADING'</span><span class="token punctuation">,</span>
+  <span class="token constant">SET_DRAWER</span><span class="token operator">:</span> <span class="token string">'SET_DRAWER'</span><span class="token punctuation">,</span>
+  <span class="token constant">SET_LOCALE</span><span class="token operator">:</span> <span class="token string">'SET_LOCALE'</span><span class="token punctuation">,</span>
+  <span class="token constant">SET_DARK</span><span class="token operator">:</span> <span class="token string">'SET_DARK'</span><span class="token punctuation">,</span>
+  <span class="token constant">SET_PRIMARY_COLOR</span><span class="token operator">:</span> <span class="token string">'SET_PRIMARY_COLOR'</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> mutations <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">[</span>types<span class="token punctuation">.</span><span class="token constant">SET_LOADING</span><span class="token punctuation">]</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> payload<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    state<span class="token punctuation">.</span>loading <span class="token operator">=</span> payload
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token punctuation">[</span>types<span class="token punctuation">.</span><span class="token constant">SET_DRAWER</span><span class="token punctuation">]</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> payload<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    state<span class="token punctuation">.</span>drawer <span class="token operator">=</span> payload
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token punctuation">[</span>types<span class="token punctuation">.</span><span class="token constant">SET_LOCALE</span><span class="token punctuation">]</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> payload<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    state<span class="token punctuation">.</span>locale <span class="token operator">=</span> payload
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token punctuation">[</span>types<span class="token punctuation">.</span><span class="token constant">SET_DARK</span><span class="token punctuation">]</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> payload<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    state<span class="token punctuation">.</span>dark <span class="token operator">=</span> payload
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token punctuation">[</span>types<span class="token punctuation">.</span><span class="token constant">SET_PRIMARY_COLOR</span><span class="token punctuation">]</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> payload<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    state<span class="token punctuation">.</span>primaryColor <span class="token operator">=</span> payload
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> actions <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function">setLocale</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> commit <span class="token punctuation">}</span><span class="token punctuation">,</span> payload</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    payload<span class="token punctuation">.</span>vm<span class="token punctuation">.</span>$i18n<span class="token punctuation">.</span>locale <span class="token operator">=</span> payload<span class="token punctuation">.</span>lang
+    <span class="token function">localeChanged</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">commit</span><span class="token punctuation">(</span>types<span class="token punctuation">.</span><span class="token constant">SET_LOCALE</span><span class="token punctuation">,</span> payload<span class="token punctuation">.</span>lang<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token function">setDark</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> commit <span class="token punctuation">}</span><span class="token punctuation">,</span> payload</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    payload<span class="token punctuation">.</span>vm<span class="token punctuation">.</span>$vuetify<span class="token punctuation">.</span>theme<span class="token punctuation">.</span>dark <span class="token operator">=</span> payload<span class="token punctuation">.</span>value
+    <span class="token function">commit</span><span class="token punctuation">(</span>types<span class="token punctuation">.</span><span class="token constant">SET_DARK</span><span class="token punctuation">,</span> payload<span class="token punctuation">.</span>value<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token function">setPrimaryColor</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> commit <span class="token punctuation">}</span><span class="token punctuation">,</span> payload</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    payload<span class="token punctuation">.</span>vm<span class="token punctuation">.</span>$vuetify<span class="token punctuation">.</span>theme<span class="token punctuation">.</span>themes<span class="token punctuation">.</span>dark<span class="token punctuation">.</span>primary <span class="token operator">=</span> payload<span class="token punctuation">.</span>color
+    payload<span class="token punctuation">.</span>vm<span class="token punctuation">.</span>$vuetify<span class="token punctuation">.</span>theme<span class="token punctuation">.</span>themes<span class="token punctuation">.</span>light<span class="token punctuation">.</span>primary <span class="token operator">=</span> payload<span class="token punctuation">.</span>color
+    <span class="token function">commit</span><span class="token punctuation">(</span>types<span class="token punctuation">.</span><span class="token constant">SET_PRIMARY_COLOR</span><span class="token punctuation">,</span> payload<span class="token punctuation">.</span>color<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  namespaced<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  state<span class="token punctuation">,</span>
+  mutations<span class="token punctuation">,</span>
+  actions
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="state-取值"><a href="#state-取值" class="header-anchor">#</a> State 取值</h2> <p>詳細請直接參照<a href="https://vuex.vuejs.org/zh/guide/modules.html" target="_blank" rel="noopener noreferrer">官方文檔<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>，以下僅做簡單範例。</p> <p>例如要取得 <code>User</code> 裡面的 <code>accessToken</code> 。</p> <h3 id="直接取值"><a href="#直接取值" class="header-anchor">#</a> 直接取值</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  computed<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">accessToken</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>user<span class="token punctuation">.</span>accessToken
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="使用-mapstate"><a href="#使用-mapstate" class="header-anchor">#</a> 使用 mapState</h3> <p>如果組件中大量訪問 Vuex 中的 State，一個一個寫 <code>computed</code> 很麻煩，所以可以利用官方提供的 <code>mapState()</code>。</p> <p>例如要取得 <code>User</code> 裡面的 <code>accessToken</code> <code>identity</code>。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> mapState <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  computed<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token string">'user'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'accessToken'</span><span class="token punctuation">,</span> <span class="token string">'identity'</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment">// 接著直接用 this.accessToken 就可以訪問了</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>例如要取得 <code>User</code> 裡面的 <code>accessToken</code> <code>identity</code> 跟 <code>settings</code> 裡面的 <code>locale</code>。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> mapState <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  computed<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token string">'settings'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'locale'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token operator">...</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token string">'user'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'accessToken'</span><span class="token punctuation">,</span> <span class="token string">'identity'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="mutations-取得"><a href="#mutations-取得" class="header-anchor">#</a> mutations 取得</h2> <p>大家都知道 mutations 用 <code>this.$store.commit</code> 去呼叫，以下直接示範模組化的 Vuex 怎麼呼叫</p> <h3 id="直接呼叫"><a href="#直接呼叫" class="header-anchor">#</a> 直接呼叫</h3> <p>直接把 <code>commit</code> 的第一個參數改成模組路徑即可。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// ... 例如在這邊要 call settings 裡面的 SET_DRAWER  </span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'settings/SET_DRAWER'</span><span class="token punctuation">,</span> <span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>settings<span class="token punctuation">.</span>drawer<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="使用-mapmutations"><a href="#使用-mapmutations" class="header-anchor">#</a> 使用 mapMutations</h3> <p>如果組件內有大量呼叫不同 Mutations 的需求，同樣可以用 mapMutations。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> mapMutations <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span><span class="token function">mapMutations</span><span class="token punctuation">(</span><span class="token string">'settings'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'SET_LOCALE'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">// 然後用 this.SET_LOCALE() 就可以呼叫了</span>
+    <span class="token operator">...</span><span class="token function">mapMutations</span><span class="token punctuation">(</span><span class="token string">'user'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'SET_IDENTITY'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="actions-取得"><a href="#actions-取得" class="header-anchor">#</a> actions 取得</h2> <p>跟 <code>mapMutations</code> 一樣，在 <code>methods</code> 使用 <code>mapActions</code></p> <h2 id="getters-取得"><a href="#getters-取得" class="header-anchor">#</a> getters 取得</h2> <p>跟 <code>mapState</code> 一樣，在 <code>computed</code> 使用 <code>mapGetters</code></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最後更新:</span> <span class="time">2020-5-17 18:17:36</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/ADMINDocs/guide/validate.html" class="prev">
+        表單驗證
+      </a></span> <span class="next"><a href="/ADMINDocs/guide/api.html">
+        API 呼叫
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/ADMINDocs/assets/js/app.25a4ab83.js" defer></script><script src="/ADMINDocs/assets/js/2.78fbbbce.js" defer></script><script src="/ADMINDocs/assets/js/29.cd0825c4.js" defer></script>
+  </body>
+</html>
